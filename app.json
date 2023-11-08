@@ -24,17 +24,17 @@
         "BOT_TOKEN": {
             "description": "your bot token from @BotFather",
             "required": true,
-            "value":""
+            "value":"5894209648:AAF1waPORM1VIJ_J7XSTywlVf7JOoKOoBIU"
         },
         "BOT_USERNAME": {
             "description": "your bot username from @BotFather",
             "required": false,
-            "value":""
+            "value":"Defulter4_bot"
         },
         "BOT_NAME": {
             "description": "fill with your bot name from @BotFather",
             "required": false,
-            "value":""
+            "value":"𝘿𝙚𝙛𝙪𝙡𝙩𝙚𝙧"
         },
         "ASSISTANT_NAME": {
             "description": "fill with the assistant username account without @",
@@ -44,7 +44,7 @@
         "SESSION_NAME": {
             "description": "",
             "required": true,
-            "value":"BAC6kfsAB0N-nnyuNOpJpenNZGOnThIWIbzXSI80ivAA9xPH-HKoQE36HtLF5197bKMEQxNCRg85tBk5mcLUj99nPoxTR-60rksvRvexjvZiLswCoH992in3D016DvSHrGVL8E0l84gtMYbOLFVIiNxL5EdvexvJQBwabdG1xvw3xUtHp6kdu6dwy4IHePx2pBWFiKWuJO6NjiyWU6CZdHGsRAMslFUdY11YlnQe5IPhe_vUJOlWzDlJOJs6qaU22lO1B1UBRQZE-U3D-oShr3ZXtAcOnZ5m_CdZx_0GgmEPUnXAW7Oq5hRWcyLiDkTkCeZz0dbKSXAEyayAGz1VayX3Z59GKgAAAAF9dH5UAA"
+            "value":"BQAIjn0O-s3xDncdAq9HDkFyqpZAdBzF3vddoOte3HHc-DTRwV5DfZeVeDt9gnxhA5IbqsmaCz0XnwWuPXwkWUn4ODkPemZT0jN1AI_FVYQECTYsk5PkFnZBn0NKaMlG2zLR1CJnVmKxfBByXaKd58oyrRxfRXJXmL0hhBPI144DW1IlsGkBxy6-8thW4m7rvSSRCSqG65VV-eMcXomsH6Awj5hINddD10iJmWbLTbwQvBIFewtsyL0UGMVNd36GuqjHHnZupEd0gumFys9csZ4ahMDd-uv5cr13C0YTHYv1ITdC17jhR8JXaYpyUnccS11PxKVPkPJq0sVGW8Rb7ydnAAAAAZyLQgMA"
         },
         "SUDO_USERS": {
             "description": "list of user ids to be added to sudo member list, or just fill with your id",

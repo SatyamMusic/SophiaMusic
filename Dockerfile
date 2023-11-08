@@ -1,13 +1,11 @@
-FROM python:3.9
-RUN apt update && apt upgrade -y
-RUN apt install python3-pip -y
-RUN apt install ffmpeg -y
-RUN curl -fsSL https://deb.nodesource.com/setup_19.x |  bash -
-RUN apt-get install -y nodejs
-RUN npm i -g npm
-RUN mkdir /app/
-COPY . /app
-WORKDIR /app
-RUN pip3 install --upgrade pip
-RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
+FROM nikolaik/python-nodejs:python3.10-nodejs19
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ffmpeg \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY . /app/
+WORKDIR /app/
+RUN pip3 install --no-cache-dir -U -r requirements.txt
 CMD python3 main.py

@@ -1,0 +1,94 @@
+{
+    "name": "Sophia Music Bot",
+    "description": "Telegram bot for Streaming  Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
+    "logo": "https://telegra.ph//file/a855ceaa3910d17a3174a.jpg",
+    "keywords": [
+        "pytgcalls",
+        "telegram bot",
+        "pyrogram"
+    ],
+    "website": "https://t.me/AMBOTYT",
+    "repository": "https://github.com/AbhiModszYT",
+    "success_url": "https://t.me/AMBOTYT",
+    "env": {
+        "API_ID": {
+            "description": "your API_ID from my.telegram.org",
+            "required": true,
+            "value":"12227067"
+        },
+        "API_HASH": {
+            "description": "your API_HASH from my.telegram.org",
+            "required": true,
+            "value":"b463bedd791aa733ae2297e6520302fe"
+        },
+        "BOT_TOKEN": {
+            "description": "your bot token from @BotFather",
+            "required": true,
+            "value":""
+        },
+        "BOT_USERNAME": {
+            "description": "your bot username from @BotFather",
+            "required": false,
+            "value":""
+        },
+        "BOT_NAME": {
+            "description": "fill with your bot name from @BotFather",
+            "required": false,
+            "value":""
+        },
+        "ASSISTANT_NAME": {
+            "description": "fill with the assistant username account without @",
+            "required": false,
+            "value":"Sophia"
+        },
+        "SESSION_NAME": {
+            "description": "",
+            "required": true,
+            "value":"BAC6kfsAB0N-nnyuNOpJpenNZGOnThIWIbzXSI80ivAA9xPH-HKoQE36HtLF5197bKMEQxNCRg85tBk5mcLUj99nPoxTR-60rksvRvexjvZiLswCoH992in3D016DvSHrGVL8E0l84gtMYbOLFVIiNxL5EdvexvJQBwabdG1xvw3xUtHp6kdu6dwy4IHePx2pBWFiKWuJO6NjiyWU6CZdHGsRAMslFUdY11YlnQe5IPhe_vUJOlWzDlJOJs6qaU22lO1B1UBRQZE-U3D-oShr3ZXtAcOnZ5m_CdZx_0GgmEPUnXAW7Oq5hRWcyLiDkTkCeZz0dbKSXAEyayAGz1VayX3Z59GKgAAAAF9dH5UAA"
+        },
+        "SUDO_USERS": {
+            "description": "list of user ids to be added to sudo member list, or just fill with your id",
+            "required": true,
+            "value":"6204761408"
+        },
+        "GROUP_SUPPORT": {
+            "description": "if you have group, then fill the group username here without @",
+            "required": false,
+            "value": "AM_YTSUPPORT"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "if you have channel, then fill the channel username here without @",
+            "required": false,
+            "value": "AMBOTYT"
+        },
+        "OWNER_NAME": {
+            "description": "fill with your telegram account username without @",
+            "required": false,
+            "value": "AM_YTBOTT"
+        },
+        "ALIVE_NAME": {
+            "description": "fill with your telegram account nickname/name",
+            "required": false,
+            "value": "Sophia ᴍᴜsɪᴄ"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    },
+    "stack": "container"
+    }
